@@ -2,13 +2,15 @@
 <html>
   <title>People In Relation To You</title>
   <body>
-    <p id="You">You</p>
+    <input type="text" id="text">
+    <p id="you">You</p>
     <script>
-     var You = document.getElementById("You");
-     var Youchange = function() {
-        You.innerHTML = "Sibling";
+     const text = document.querySelector("input");
+     const you = document.getElementById('you');
+     input.addEventListener('keypress', changep);
+     function(changep) {
+       you.textContent = "Sibling";
      }
-     You.addEventListener("keydown", Youchange);
     </script>
   </body>
 </html>
