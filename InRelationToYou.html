@@ -5,10 +5,10 @@
     <p id="You">You</p>
     <script>
      var You = document.getElementById("You");
-     var onButtonClick = function() {
-        
-    }
-     You.addEventListener("click", onButtonClick);
+     var Youchange = function() {
+        You.textContent = "Sibling";
+     }
+     You.addEventListener("keydown", Youchange);
     </script>
   </body>
 </html>
