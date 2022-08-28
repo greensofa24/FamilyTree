@@ -5,7 +5,11 @@
     <p id="You">You</p>
     <script>
      var You = GetElementById("You");
-     You.textContext = "Sibling";
+     var YouChange = function(e) {
+       if(e.key === 's') {
+       You.textContext = "Sibling";
+       }
+     };
     </script>
   </body>
 </html>
