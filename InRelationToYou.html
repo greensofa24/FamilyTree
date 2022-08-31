@@ -2,15 +2,39 @@
 <html>
   <title>People In Relation To You</title>
   <body>
-    <input type="text" id="text">
     <p id="you">You</p>
+    <button id="sister">Sister</button>
+    <button id="brother">Brother</button>
+    <button id="mother">Mother</button>
+    <button id="father">Father</button>
+    <button id="daughter">Daughter</button>
+    <button id="son">Son</button>
     <script>
-     const text = document.querySelector("input");
-     const you = document.getElementById('you');
-     input.addEventListener('keypress', changep);
-     function changep() {
-       you.textContent = "Sibling";
-     }
+      const you = getElementById("you");
+      const sister = getElementById("sister");
+      const brother = getElementById("brother");
+      const mother = getElementById("mother");
+      const father = getElementById("father");
+      const daughter = getElementById("daughter");
+      const son = getElementById("son");
+      const sisterclick = function() {
+        you.textContent = "sister";
+      }
+      const brotherclick = function() {
+        you.textContent = "brother";
+      }
+      const motherclick = function() {
+        you.textContent = "mother";
+      }
+      const fatherclick = function() {
+        you.textContent = "father";
+      }
+      const daughterclick = function() {
+        you.textContent = "daughter";
+      }
+      const sonclick = function() {
+        you.textContent = "son";
+      }
     </script>
   </body>
 </html>
